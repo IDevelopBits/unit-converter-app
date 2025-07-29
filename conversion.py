@@ -61,9 +61,11 @@ def convert_length(value, from_unit, to_unit):
     length = value * length_factors[from_unit]
     return length / length_factors[to_unit]
 
+
 def convert_weight(value, from_unit, to_unit):
     weight = value * weight_factors[from_unit]
     return weight / weight_factors[to_unit]
+
 
 def convert_temperature(value, from_unit, to_unit):
     celsius = to_celsius[from_unit](value)

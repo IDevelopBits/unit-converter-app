@@ -25,6 +25,7 @@ def load_length_page():
         with col3:
             st.metric(label="New unit", value=0)
 
+
 def load_weight_page():
     col1, col2, col3 = st.columns(3)
 
@@ -72,6 +73,7 @@ def load_temperature_page():
         with col3:
             st.metric(label="New unit", value=0)
 
+
 st.title("Unit Converter")
 tabs = st.tabs(["Length", "Width", "Temperature"])
 
@@ -83,4 +85,3 @@ with tabs[1]:
 
 with tabs[2]:
     load_temperature_page()
-

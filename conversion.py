@@ -36,8 +36,8 @@ unit_labels = {
         "pound": "lb"
     },
     "temperature": {
-        "Celsius": "C",
-        "Fahrenheit": "F",
+        "Celsius": "°C",
+        "Fahrenheit": "°F",
         "Kelvin": "K"
     }
 }

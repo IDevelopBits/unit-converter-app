@@ -21,9 +21,9 @@ def load_length_page():
             st.metric(label="New unit", value=f"{length:.2f} {conversion.unit_labels["length"][to_unit]}")
     else:
         with col2:
-            st.metric(label="Old unit", value=0)
+            st.metric(label="Old unit", value=0.00)
         with col3:
-            st.metric(label="New unit", value=0)
+            st.metric(label="New unit", value=0.00)
 
 
 def load_weight_page():
@@ -45,9 +45,9 @@ def load_weight_page():
             st.metric(label="New unit", value=f"{weight:.2f} {conversion.unit_labels["weight"][to_unit]}")
     else:
         with col2:
-            st.metric(label="Old unit", value=0)
+            st.metric(label="Old unit", value=0.00)
         with col3:
-            st.metric(label="New unit", value=0)
+            st.metric(label="New unit", value=0.00)
 
 
 def load_temperature_page():
@@ -69,9 +69,9 @@ def load_temperature_page():
             st.metric(label="New unit", value=f"{temperature:.2f} {conversion.unit_labels["temperature"][to_unit]}")
     else:
         with col2:
-            st.metric(label="Old unit", value=0)
+            st.metric(label="Old unit", value=0.00)
         with col3:
-            st.metric(label="New unit", value=0)
+            st.metric(label="New unit", value=0.00)
 
 
 st.title("Unit Converter")

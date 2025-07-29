@@ -6,7 +6,7 @@ def load_length_page():
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        value = st.number_input("Enter length to convert to", value=100)
+        value = st.number_input("Enter length to convert to", value=100.00)
         convert = st.button("Convert", key="convert_length", type="primary", use_container_width=True)
     with col2:
         from_unit = st.selectbox("Unit to convert from", conversion.unit_labels["length"].keys())
@@ -29,7 +29,7 @@ def load_weight_page():
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        value = st.number_input("Enter weight to convert to", value=100)
+        value = st.number_input("Enter weight to convert to", value=100.00)
         convert = st.button("Convert", key="convert_weight", type="primary", use_container_width=True)
     with col2:
         from_unit = st.selectbox("Unit to convert from", conversion.unit_labels["weight"].keys())
@@ -53,7 +53,7 @@ def load_temperature_page():
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        value = st.number_input("Enter temperature to convert to", value=100)
+        value = st.number_input("Enter temperature to convert to", value=100.00)
         convert = st.button("Convert", key="convert_temperature", type="primary", use_container_width=True)
     with col2:
         from_unit = st.selectbox("Unit to convert from", conversion.unit_labels["temperature"].keys())
